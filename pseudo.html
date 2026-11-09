@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css" />
+    <style>
+      nav ol {
+        display: flex;
+      }
+      nav {
+        display: block;
+      }
+      nav a {
+        background: lightpink;
+        padding: 0.4rem;
+        display: block;
+
+        &:hover {
+          background: lightsteelblue;
+        }
+        /* :focus :checked :selected :disabled :enabled :required :has() :where() :is() */
+      }
+
+      li:nth-child(even) {
+        background: lightpink;
+      }
+      li:nth-child(odd) {
+        background: lightgoldenrodyellow;
+      }
+      ul li:first-child {
+        border-left: 10px solid green;
+      }
+      ul li:last-child {
+        border-left: 10px solid green;
+      }
+      input:focus {
+        box-shadow: 0 0 10px 4px purple;
+        outline: none;
+      }
+
+      form {
+        border: 3px dotted transparent;
+      }
+      /* form:has(input:invalid) {
+        border: 3px dotted red;
+      } */
+      form:focus-within {
+        border: 2px solid green;
+      }
+
+      blockquote {
+        padding: 1.5rem;
+        background: lightgreen;
+        position: relative;
+
+        &::before {
+          content: "voor";
+        }
+        &::after {
+          content: '"';
+          font-size: 4rem;
+          position: absolute;
+          top: 0;
+          right: 1rem;
+          margin-top: -1rem;
+        }
+      }
+
+      ::backdrop {
+        background: linear-gradient(red, yellow, blue, orange);
+        opacity: 0.4;
+      }
+      
+
+      p::selection {
+        background: pink;
+      }
+      p::first-letter {
+        font-size: 4rem;
+      }
+      p::first-line {
+        background: lightgoldenrodyellow;
+      }
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ol>
+        <li><a href="start.html">start</a></li>
+        <li><a href="portfolio.html">portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ol>
+    </nav>
+    <hr />
+
+    <blockquote>
+      Een of ander wijs citaat.
+      <cite>Niet Elon Musk</cite>
+    </blockquote>
+
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, rerum?</p>
+    <p>Dolore dolor debitis repudiandae voluptas fugit consequuntur quae cupiditate architecto?</p>
+    <p>Enim qui facere minima porro et dolore repudiandae earum repellat!</p>
+    <p>Facilis ad veniam a officiis provident harum, alias sit velit?</p>
+    <p>Fugiat, praesentium. Nam illum excepturi, qui provident ratione aliquid ea.</p>
+    <p>Placeat vero dolores laborum voluptates quae accusamus pariatur ratione hic.</p>
+    <p>Vel similique maxime sequi libero, numquam ullam nisi id tempore?</p>
+    <p>Facere vero accusantium doloremque itaque pariatur placeat delectus temporibus incidunt!</p>
+    <p>Vero sunt magni eum architecto optio deleniti? Dolorum, saepe quisquam.</p>
+    <p>Ullam vitae repellendus commodi quos deserunt. Beatae officiis aperiam velit.</p>
+
+
+
+
+    <article>
+      <h1>Modal dialog</h1>
+
+      <kbd>Win</kbd>
+      <output>resultaat van een berekening</output>
+      <time></time>
+
+      <button command="show-modal" commandfor="mijn-dialog">Open dialog</button>
+      <dialog id="mijn-dialog">Hier mijn dialog ding!</dialog>
+    </article>
+
+    <hr />
+    <ul>
+      <li>Lorem ipsum dolor sit amet.</li>
+      <li>Sequi corrupti doloribus eaque officiis?</li>
+      <li>Hic rem nesciunt optio nemo.</li>
+      <li>Asperiores molestiae explicabo aspernatur culpa.</li>
+      <li>Nesciunt temporibus eligendi perferendis voluptatem?</li>
+      <li>Odio amet dolor quibusdam nulla.</li>
+      <li>Facilis voluptate commodi cum fugit.</li>
+      <li>Illo eius nostrum voluptatibus optio.</li>
+      <li>Sunt, eos autem! Quas, a.</li>
+      <li>Voluptate consequatur enim est illum?</li>
+    </ul>
+
+    <form action="">
+      <input type="text" required /><input type="text" required /><input
+        type="text"
+      /><input type="text" /><input type="text" />
+    </form>
+    <form action="">
+      <input type="text" required /><input type="text" required /><input
+        type="text"
+      /><input type="text" /><input type="text" />
+    </form>
+  </body>
+</html>
