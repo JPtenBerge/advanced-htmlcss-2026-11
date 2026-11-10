@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .px {
+        font-size: 16px; /* niet heel erg accessible */
+      }
+      .em {
+        /* parent element */
+        font-size: 0.8em; /* a11y */
+      }
+      .rem { /* JP's default */
+        /* root, instelling van browser */
+        font-size: 1.2rem; /* a11y */
+      }
+      .vw {
+        font-size: 3.5vw;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="px">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore dolores
+      labore distinctio tenetur temporibus necessitatibus architecto totam
+      laboriosam, nisi sint doloribus incidunt ipsa praesentium sit dignissimos
+      repellat error quibusdam ducimus.
+    </p>
+    <p class="em">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore dolores
+      labore distinctio tenetur temporibus necessitatibus architecto totam
+      laboriosam, nisi sint doloribus incidunt ipsa praesentium sit dignissimos
+      repellat error quibusdam ducimus.
+    </p>
+    <p class="rem">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore dolores
+      labore distinctio tenetur temporibus necessitatibus architecto totam
+      laboriosam, nisi sint doloribus incidunt ipsa praesentium sit dignissimos
+      repellat error quibusdam ducimus.
+    </p>
+    <p class="vw">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore dolores
+      labore distinctio tenetur temporibus necessitatibus architecto totam
+      laboriosam, nisi sint doloribus incidunt ipsa praesentium sit dignissimos
+      repellat error quibusdam ducimus.
+    </p>
+
+    <ul class="rem">
+      <li>Lorem ipsum dolor sit amet.</li>
+      <li>Nesciunt cumque maiores asperiores quisquam.</li>
+      <li>
+        Laborum, excepturi delectus. Voluptates, suscipit.
+        <ul class="rem">
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Nesciunt cumque maiores asperiores quisquam.</li>
+          <li>
+            Laborum, excepturi delectus. Voluptates, suscipit.
+            <ul class="rem">
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Nesciunt cumque maiores asperiores quisquam.</li>
+              <li>Laborum, excepturi delectus. Voluptates, suscipit.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>
