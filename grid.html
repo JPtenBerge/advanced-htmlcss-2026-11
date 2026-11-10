@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <form>
+      <ol class="grid grid-cols-[max-content_1fr]">
+        <li class="grid grid-cols-subgrid col-span-2 items-center">
+          <label for="">Naam:</label>
+          <input type="text" class="border-1 m-1" />
+        </li>
+        <li class="grid grid-cols-subgrid col-span-2 items-center">
+          <label for="">E-mail:</label>
+          <input type="text" class="border-1 m-1" />
+        </li>
+        <li class="grid grid-cols-subgrid col-span-2">
+          <label for="" class="pt-1">Bericht:</label>
+          <textarea class="border-1 m-1"></textarea>
+        </li>
+        <li class="col-span-2">
+          <button class="border-2 bg-green-300 p-2 w-40">Stuur!</button>
+        </li>
+      </ol>
+    </form>
+  </body>
+</html>
